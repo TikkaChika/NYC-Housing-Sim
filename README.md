@@ -42,14 +42,5 @@ Limitations
 
 This model focuses on incremental costs and direct savings. It does not account for new revenue the plan may generate, such as long-term tax gains, economic growth, or outside funding. Those would need a separate revenue model.
 
-If you want, I can also create:
-
-A short “Parameters” table
-
-A “Results” section
-
-A visual diagram of how the simulation works
-
-A polished project tagline for GitHub
 
 Just tell me.
