@@ -28,11 +28,11 @@ pip install numpy pandas matplotlib
 
 Run the model:
 
-python main.py
+python mamdani-housing-sim.py
 
 File Structure
-main.py       # model, simulation, plots
-README.md     # project overview
+mamdani-housing-sim.py       # model, simulation, plots
+README.md                    # project overview
 
 Purpose
 
@@ -41,6 +41,3 @@ The goal is to estimate whether a large housing investment plan can fit within a
 Limitations
 
 This model focuses on incremental costs and direct savings. It does not account for new revenue the plan may generate, such as long-term tax gains, economic growth, or outside funding. Those would need a separate revenue model.
-
-
-Just tell me.
