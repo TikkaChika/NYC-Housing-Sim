@@ -3,7 +3,7 @@ NYC Housing Investment Monte Carlo Model
 
 This project simulates the 10-year fiscal impact of a large housing agenda proposed for New York City. The model estimates annual costs for major policy areas, including affordable housing construction, NYCHA capital work, rent supports, and tenant protection programs. It also includes expected savings from homeowner tax reforms.
 
-A Monte Carlo simulation runs thousands of possible cost paths based on uncertainty in these policy areas. The results compare the simulated 10-year cost of the housing agenda to a spending cap based on growth of the existing housing budget. This shows how often the plan fits within that expanded fiscal envelope and how often it exceeds it.
+A Monte Carlo model estimating the 10-year cost of NYC’s proposed $100B housing plan. Simulates policy costs, tax savings, and budget uncertainty, then tests whether the plan fits within an expanded housing-budget cap. This does not account for revenue generated during the 10 years.
 
 Features
 
