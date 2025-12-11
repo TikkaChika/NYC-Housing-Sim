@@ -1,0 +1,54 @@
+## Parameters
+
+### Simulation Settings
+
+The model uses two core settings:
+
+* `n_sims` controls how many Monte Carlo runs are performed. Each run simulates 10 years of policy costs.
+* `horizon_years` sets the length of the simulation window, which is 10 years.
+
+---
+
+### Budget Baselines
+
+The simulation uses two baseline values to anchor the budget environment:
+
+* `total_city_budget_annual` represents New York City’s annual budget.
+* `baseline_housing_budget_annual` represents the current annual housing-related budget and is used to define the cap.
+
+---
+
+### Cap Settings
+
+This model applies a spending cap based on the housing budget.
+
+* `cap_type` is set to `"housing_share"`, which means the cap is tied to a multiple of the existing 10-year housing baseline.
+* `cap_pct` determines how large the cap is. For example, a value like `5.5` means the simulation allows spending up to 5.5 times the 10-year housing budget.
+
+The simulation measures how often the total cost stays below this cap.
+
+---
+
+### Policy Cost Blocks
+
+The model groups the housing agenda into four policy cost areas. Each area has an expected annual cost and a level of uncertainty. During each simulated year, the model draws a random cost from a normal distribution.
+
+The four areas are:
+
+* `rent_freeze_tenant_supports`: covers rent freezes, vouchers, and tenant support programs.
+  Mean annual cost is about $0.9B, with $0.3B variability.
+
+* `affordable_units_200k`: includes construction of 200,000 affordable units and expanded NYCHA capital investment.
+  Mean annual cost is about $8.0B, with $2.0B variability.
+
+* `tenant_protection`: covers enforcement work, inspections, and legal protections.
+  Mean annual cost is about $0.4B, with $0.15B variability.
+
+* `homeowner_tax`: represents net savings from homeowner tax reforms.
+  Mean annual savings is about $0.8B, with $0.4B variability.
+
+---
+
+### Interpretation
+
+Each simulation run adds up 10 years of randomly drawn costs and savings. This produces a range of possible 10-year totals rather than a single estimate. The model reports how often the plan stays under the spending cap and how often it exceeds it, giving a sense of fiscal risk.
